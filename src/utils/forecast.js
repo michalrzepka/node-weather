@@ -18,7 +18,7 @@ const forecast = (latitude, longtitude, callback) => {
         } else if (body.error) {
             callback('Ni można znaleź pogody dla tego miejsca.', undefined)
         } else {
-            const message = body.currently.summary + ', ' + body.currently.temperature + ' stopni, ' + body.currently.precipProbability + '% szans na opady.'
+            const message = body.currently.summary + ', ' + Math.round(body.currently.temperature) + ' °C, ' + (body.currently.precipProbability * 100) + '% szans na opady.'
             callback(undefined, message)
         }
     })
