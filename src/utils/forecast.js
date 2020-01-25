@@ -7,7 +7,7 @@ const forecast = (latitude, longtitude, callback) => {
         baseUrl: 'https://api.darksky.net',
         qs: {
             lang: 'pl',
-            units: 'auto'
+            units: 'si'
         },
         json: true
     }
