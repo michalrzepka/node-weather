@@ -10,7 +10,7 @@ body {
 }
 
 .main_content {
-    flex-grow:1;
+    flex-grow: 1;
 }
 
 header {
@@ -29,7 +29,7 @@ footer {
     padding-top: 16px;
 }
 
-header a{
+header a {
     color: black;
     margin-right: 16px;
     text-decoration: none;
