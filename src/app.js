@@ -46,7 +46,7 @@ app.get('/weather', (req, res) => {
 
     if (!address) {
         return res.send({
-            error: 'Podej miejsce kaj mom szukać!'
+            error: 'Podej miejsce, kaj mom szukać!'
         })
     }
 
@@ -86,4 +86,4 @@ app.get('*', (req, res) => {
 
 app.listen(3000, () => {
     console.log('Server is up on port 3000')
-})
+}) 
